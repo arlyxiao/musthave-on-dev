@@ -49,7 +49,7 @@
 				var dd = new window.mhForm.DropDown( $('.wrapper-dropdown') );
 
                 dd.on('click', 'ul li', function(event) {
-                    alert("sss")
+                    $(this).closest('.wrapper-dropdown').find('span').html($(this).text());
                 });
 
 			});
